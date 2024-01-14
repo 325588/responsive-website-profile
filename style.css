@@ -1,0 +1,251 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #ff900e;
+    padding: 20px 25px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+}
+header{
+    background-color:cornsilk;
+    padding: 50px 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    text-align: start;
+    justify-content: start;
+}
+
+
+nav>ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+.banner{
+    padding-left: 100px;
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: o auto;
+}
+.imgg{
+    height: 400px;
+    width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+    
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.resize-pic{
+    height: 300px;
+    width: 250px;
+    
+    margin: 6px;
+}
+.team-container{ 
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    gap: 20px;
+    }
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+    
+.team-title .quick-list{
+color: #727272;
+font-weight: 500px;
+}
+.team-title .featureee{
+    font-weight: 700px;
+    color: #ff900e;
+}
+
+    
+
+.feature{
+    margin: 120px;
+    display: flex;
+    gap: 100px;
+    width: 55%;
+    
+    display: flex;
+}
+.feature-img{
+   
+    width: 25%;
+   
+    
+    
+}
+.archite{
+    height: 750px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 50px;
+    
+}
+
+
+.feature .section-title{
+    border-left: 5px solid #ff900e;
+    padding-left: 25px;
+}
+.feature-content .card{
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px black;
+}
+.ten-year-badge{
+    border-radius: 8px;
+    background-color: #ff900e;
+    color: white;
+    width: 100px;
+    height: 50px;
+    padding: 50px;
+    margin-right: 50px;
+    text-align:center;
+    position: relative;
+    bottom: 80px;
+}
+.text-description{
+    color: gray;
+}
+.grown{
+    color: black;
+    font-size: 20px;
+    
+}
+.facts{
+    padding-left: 100px;
+    
+}
+.rd-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.rd-container .card{
+    border-radius: 8px;
+    border: 1px solid #ff900e ;
+    text-align: center;
+    padding: 15px;
+}
+.rd-container .card-title{
+    font-weight: 600;
+    color: #727272;
+    font-size: 1.20rem;
+    margin-top: 5px;
+}
+.rd-container .card-stats{
+    font-size: 2.6rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section-title{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.pp{
+    text-align: center;
+}
+.sponsers-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.footer{
+    width: 1250px;
+    height: 70px;
+    background-color:beige;
+    margin-top: 120px;
+    margin-bottom: 250px;
+    text-align: center;
+    padding-top:15px;
+}
+
+
+/*mobile device*/
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px ;
+    }
+    sponsers-img-container{
+        width: 120px;
+        gap: 20px;
+    }
+   nav,
+    .team-container,
+    .rd-container,
+    .sponsers-img-container,.feature
+    {
+    flex-direction: column;
+   } 
+   .feature-img .archite{
+    width:300px;
+    margin-left: 0;
+   }
+   .ten-year-badge{
+    position: static;
+   }
+   .team-container,
+   .rd-container
+{
+    display: flex;
+    padding-right: 120px;
+
+   }
+   .rd-container{
+    gap: 20px;
+   }
+.team-img-container{
+    grid-template-columns: 1fr;
+
+}
+}
+/*tablet device*/
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
